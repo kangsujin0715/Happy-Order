@@ -8,7 +8,30 @@
 	<title>해피오더 픽업서비스</title>
 	<link rel="stylesheet" href="css/font.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/swiper-bundle.css">
 	<link rel="stylesheet" href="css/common.css">
+	<style>
+		.swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+	</style>
 </head>
 <body>
 	<div class="user-address"><a href="#"><h6>배달 받을실 주소를 입력해주세요.</h6></a></div>
@@ -72,78 +95,77 @@
 					<li><button class="next"></button></li>
 				</ul>
 			</section>
-			<section class="brand">
+			<section class="today">
 				<div class="box">
-					<h2 class="title">가장 인기있는<br>
-						브랜드💌</h2>
-					<article class="overflow-y">
-						<ul>
-							<li class="item">
-								<a href="#">
-									<img src="images/2022-04-25-9-11-59@3x.png" alt="베이커리">
-									<h6>베이커리</h6>
-								</a>
-							</li>
-							<li class="item">
-								<a href="#">
-									<img src="images/2022-04-25-9-11-59@3x.png" alt="디저트">
-									<h6>디저트</h6>
-								</a>
-							</li>
-							<li class="item">
-								<a href="#">
-									<img src="images/2022-04-25-9-11-59@3x.png" alt="카페">
-									<h6>카페</h6>
-								</a>
-							</li>
-							<li class="item">
-								<a href="#">
-									<img src="images/2022-04-25-9-11-59@3x.png" alt="샐러드">
-									<h6>샐러드</h6>
-								</a>
-							</li>
-							<li class="item">
-								<a href="#">
-									<img src="images/2022-04-25-9-11-59@3x.png" alt="샌드위치">
-									<h6>샌드위치</h6>
-								</a>
-							</li>
-							<li class="item">
-								<a href="#">
-									<img src="images/2022-04-25-9-11-59@3x.png" alt="버거">
-									<h6>버거</h6>
-								</a>
-							</li>
-							<li class="item">
-								<a href="#">
-									<img src="images/2022-04-25-9-11-59@3x.png" alt="치킨">
-									<h6>치킨</h6>
-								</a>
-							</li>
-							<li class="item">
-								<a href="#">
-									<img src="images/2022-04-25-9-11-59@3x.png" alt="파스타/피자">
-									<h6>파스타/피자</h6>
-								</a>
-							</li>
-							<li class="item">
-								<a href="#">
-									<img src="images/2022-04-25-9-11-59@3x.png" alt="분식/한식">
-									<h6>분식/한식</h6>
-								</a>
-							</li>
-							<li class="item">
-								<a href="#">
-									<img src="images/2022-04-25-9-11-59@3x.png" alt="편의점">
-									<h6>편의점</h6>
-								</a>
-							</li>
-						</ul>
+					<h2 class="title">오늘 추천 어때요?🥰</h2>
+						<!-- Swiper -->
+						<div class="swiper today-swiper">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide item item">
+									<a href="#">
+										<img src="images/index.png" alt="베이커리">
+										<h6>베이커리</h6>
+									</a>
+								</li>
+								<li class="swiper-slide item">
+									<a href="#">
+										<img src="images/index.png" alt="디저트">
+										<h6>디저트</h6>
+									</a>
+								</li>
+								<li class="swiper-slide item">
+									<a href="#">
+										<img src="images/index.png" alt="카페">
+										<h6>카페</h6>
+									</a>
+								</li>
+								<li class="swiper-slide item">
+									<a href="#">
+										<img src="images/index.png" alt="샐러드">
+										<h6>샐러드</h6>
+									</a>
+								</li>
+								<li class="swiper-slide item">
+									<a href="#">
+										<img src="images/index.png" alt="샌드위치">
+										<h6>샌드위치</h6>
+									</a>
+								</li>
+								<li class="swiper-slide item">
+									<a href="#">
+										<img src="images/index.png" alt="버거">
+										<h6>버거</h6>
+									</a>
+								</li>
+								<li class="swiper-slide item">
+									<a href="#">
+										<img src="images/index.png" alt="치킨">
+										<h6>치킨</h6>
+									</a>
+								</li>
+								<li class="swiper-slide item">
+									<a href="#">
+										<img src="images/index.png" alt="파스타/피자">
+										<h6>파스타/피자</h6>
+									</a>
+								</li>
+								<li class="swiper-slide item">
+									<a href="#">
+										<img src="images/index.png" alt="분식/한식">
+										<h6>분식/한식</h6>
+									</a>
+								</li>
+								<li class="swiper-slide item">
+									<a href="#">
+										<img src="images/index.png" alt="편의점">
+										<h6>편의점</h6>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
 					</article>
-					<ul class="prev-next-box">
-						<li><button class="prev dis"></button></li>
-						<li><button class="next"></button></li>
-					</ul>
 				</div>
 			</section>
 			<section class="brand">
@@ -154,49 +176,49 @@
 						<ul>
 							<li class="item">
 								<a href="#">
-									<img src="images/2022-04-25-9-11-59@3x.png" alt="스타벅스">
+									<img src="images/index.png" alt="스타벅스">
 									<h6>스타벅스</h6>
 								</a>
 							</li>
 							<li class="item">
 								<a href="#">
-									<img src="images/2022-04-25-9-11-59@3x.png" alt="배스킨라빈스">
+									<img src="images/index.png" alt="배스킨라빈스">
 									<h6>배스킨라빈스</h6>
 								</a>
 							</li>
 							<li class="item">
 								<a href="#">
-									<img src="images/2022-04-25-9-11-59@3x.png" alt="던킨">
+									<img src="images/index.png" alt="던킨">
 									<h6>던킨</h6>
 								</a>
 							</li>
 							<li class="item">
 								<a href="#">
-									<img src="images/2022-04-25-9-11-59@3x.png" alt="파스쿠찌">
+									<img src="images/index.png" alt="파스쿠찌">
 									<h6>파스쿠찌</h6>
 								</a>
 							</li>
 							<li class="item">
 								<a href="#">
-									<img src="images/2022-04-25-9-11-59@3x.png" alt="쉐이크쉑">
+									<img src="images/index.png" alt="쉐이크쉑">
 									<h6>쉐이크쉑</h6>
 								</a>
 							</li>
 							<li class="item">
 								<a href="#">
-									<img src="images/2022-04-25-9-11-59@3x.png" alt="피자헛">
+									<img src="images/index.png" alt="피자헛">
 									<h6>피자헛</h6>
 								</a>
 							</li>
 							<li class="item">
 								<a href="#">
-									<img src="images/2022-04-25-9-11-59@3x.png" alt="이삭토스트">
+									<img src="images/index.png" alt="이삭토스트">
 									<h6>이삭토스트</h6>
 								</a>
 							</li>
 							<li class="item">
 								<a href="#">
-									<img src="images/2022-04-25-9-11-59@3x.png" alt="KFC">
+									<img src="images/index.png" alt="KFC">
 									<h6>KFC</h6>
 								</a>
 							</li>
@@ -308,22 +330,6 @@
 							<a href="#">
 								<div class="img-box">
 									<img src="images/donuts07.png" alt="도넛">
-								</div>
-								<div class="info">
-									<p class="brand">던킨도너츠</p>
-									<p class="title">디카페인 카페라떼 Tall</p>
-									<span class="price">7,600원</span>
-									<div class="point">
-										<span>10% 적입</span>
-										<span>최대 267p</span>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="item">
-							<a href="#">
-								<div class="img-box">
-									<img src="images/donuts01.png" alt="도넛">
 								</div>
 								<div class="info">
 									<p class="brand">던킨도너츠</p>
@@ -576,10 +582,21 @@
 		</div>
 	</footer>
 	<button class="btn-top"></button>
-	<script src="js/jquery-3.7.1.js"></script>
+
+	<!-- script -->
+	<script src="js/jquery-3.7.1.min.js"></script>
 	<script src="js/common.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
 	<script>
-	</script>
+		var swiper = new Swiper(".today-swiper", {
+		  slidesPerView: 8,
+		  spaceBetween: 20,
+		  navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		});
+	  </script>
 </body>
 </html>
